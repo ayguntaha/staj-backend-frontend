@@ -83,21 +83,7 @@ function addInteractions() {
 
         });
     }
-    //modify.on('modifyend', function (event) {
 
-    //    const modifiedFeature = event.features.getArray()[0];
-    //    const modifiedGeometry = modifiedFeature.getGeometry();
-
-    //    const format = new WKT();
-
-    //    wktGeometry = format.writeGeometry(modifiedGeometry);
-
-    //    console.log("parselid:",parselId);
-    //    console.log("modify ici", wktGeometry);
-
-    //    parseliGuncelle(wktGeometry);
-
-    //});
 }
 function deleteWktGeometryOnMap(wktGeometry) {
     var featureToRemove = source.getFeatures().find(function (feature) {
@@ -206,8 +192,8 @@ function parseliSil(id) {
             parselleriListele();
         })
         .catch(error => {
-            console.error("Hata oluþtu:", error);
-            throw error; 
+            console.error("Hata oluï¿½tu:", error);
+            throw error;
         });
 }
 function parselleriGoruntule(parseller) {
